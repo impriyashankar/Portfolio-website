@@ -1,0 +1,819 @@
+* {
+  box-sizing: border-box;
+}
+body {
+}
+
+#toggle-btn > span {
+  background-color: black;
+}
+#nav-bar {
+  display: flex;
+}
+
+header,
+#nav-bar > li > a {
+  color: #ab0259;
+}
+#nav-bar > li > a {
+  padding: 20px;
+}
+/*#nav-bar>li:hover>a
+{
+	font-size:1.3em;
+	background-color:transparent;
+}*/
+/*#nav-bar>li>a:last-child
+{
+	display:none;
+}
+#nav-bar>li:hover>a:first-child
+{
+	display:none;
+}
+#nav-bar>li:hover>a:last-child
+{
+	display:inline;
+}*/
+
+header {
+  background-color: #02afc5;
+}
+#nav-bar > li > a {
+  font-size: 1.1em;
+  /*transition:all .2s ease-in;*/
+}
+
+#myNav {
+  position: absolute;
+  right: 22px;
+  top: 75px;
+  z-index: 2;
+}
+#myNav > div {
+  margin-bottom: 5px;
+}
+#myNav > div > img {
+  border-radius: 50%;
+}
+#top-blk {
+  min-height: 75px;
+  padding-top: 15px;
+}
+
+.intro {
+  background-image: url("images/me1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  max-height: 100vh;
+  padding-top: 180px;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+#nav-bar > li {
+  position: relative;
+}
+
+#nav-bar > li a {
+  transition: opacity 0.2s linear;
+}
+#nav-bar > li a:last-child {
+  position: absolute;
+  top: 0;
+  left: 5px;
+
+  opacity: 0;
+}
+
+#nav-bar > li a:last-child > img {
+  padding-top: -5px;
+  padding-bottom: 5px;
+  border-radius: 50%;
+}
+
+#nav-bar > li.active > a,
+#nav-bar > li:hover > a {
+  background-color: transparent;
+}
+#nav-bar > li:hover > a:first-child {
+  opacity: 0;
+}
+
+#nav-bar > li:hover > a:last-child {
+  opacity: 1;
+}
+
+.navbar-brand > p {
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#intro-text {
+  position: relative;
+  z-index: 2;
+  height: 500px;
+  color: #f9e234;
+}
+#intro-text > h1,
+#skills > h1,
+#tools > h1,
+#guru > div > h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f9e234;
+}
+
+#intro-text > #temp-blk > p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+i::after {
+  position: absolute;
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-size: 1.2em;
+  top: 1em;
+  right: 0;
+  transition: display 0.5s ease-in;
+}
+
+i:hover::after {
+  content: "SCROLL DOWN";
+  font-size: 12px;
+}
+
+#intro-text > #temp-blk > a {
+  padding: 20px 50px;
+  background-color: #f81b8d;
+  border-radius: 10%;
+  font-size: 1.2em;
+  color: #f9e234;
+  text-decoration: none;
+}
+
+#intro-text > div {
+  margin-top: 30px;
+}
+#ques {
+  font-size: 1.2em;
+  background-color: black;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 25%;
+}
+.intro > i {
+  font-size: 10em;
+  position: relative;
+  bottom: 2.5em;
+  color: #f9e234;
+  z-index: 2;
+}
+
+.intro > .color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #f81b8d;
+  z-index: 1;
+}
+
+.about-me {
+  margin-top: 100px;
+  font-size: 1.2em;
+  text-align: left;
+  font-family: "Source Serif Pro", serif;
+  margin-bottom: 100px;
+}
+/*SKILLS STYLING*/
+
+#skills {
+  background-image: url("images/skills.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  height: 100vh;
+  width: auto;
+}
+#skills > h1,
+#tools > h1,
+#guru > div > h1 {
+  padding-top: 100px;
+}
+.flip-container {
+  display: flex;
+  font-family: "Fira Mono", monospace;
+  flex-wrap: wrap;
+}
+.flipper {
+  flex-grow: 1;
+  width: 200px;
+  height: 300px;
+}
+
+.front,
+.back {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  padding-left: 10px;
+}
+.flip-container > div:first-child {
+  background-color: rgb(197, 29, 2);
+}
+.flip-container > div:nth-child(2) {
+  background-color: rgb(146, 84, 74);
+}
+.flip-container > div:nth-child(3) {
+  background-color: rgb(248, 27, 141);
+}
+.flip-container > div:nth-child(4) {
+  background-color: rgb(147, 249, 89);
+}
+.flip-container > div:last-child {
+  background-color: rgb(140, 197, 2);
+}
+
+.flipper #one {
+  background-image: url("images/html.png");
+  background-size: cover;
+}
+.flipper #two {
+  background-image: url("images/css.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flipper #three {
+  background-image: url("images/javascript.png");
+  background-size: cover;
+  background-position: center;
+}
+.flipper #four {
+  background-image: url("images/php.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flipper #five {
+  background-image: url("images/mysql.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.flip-container {
+  perspective: 800px;
+}
+/* flip the pane when hovered */
+/*.flip-container:hover .flipper , .flip-container.hover .flipper */
+.flipper:hover {
+  transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.4s ease-in;
+  /*transform-style: preserve-3d;*/
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(-180deg);
+}
+
+#tools {
+  background-image: url("images/tools.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+#tools > h1 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+/*#toolset {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(249, 226, 52, 0.3);
+}*/
+#toolbox {
+  display: flex;
+
+ 
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left:0;
+  padding-right:0;
+}
+#toolbox .item {
+  width: 250px;
+  height: 250px;
+  
+  /*border: 1px solid black;*/
+  
+position:relative;
+z-index:1;
+  
+  
+ /* transition: opacity 1s ease-in-out;*/
+}
+#toolbox .item>div:last-child
+{
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#t-one,#t-two,#t-three
+{
+	transform:scale(0);
+	transition:transform ease-in-out 1s;
+	
+}
+#t-four
+{
+	transform:scale(0);
+	transition:transform ease-in-out 4s;
+	
+	background-image: url("images/mamp.png");
+
+	
+}
+#t-five
+{
+	transform:scale(0);
+transition:transform ease-in-out 5s;
+
+background-image: url("images/bs.png");
+  
+}
+#t-one
+{
+	
+background-image: url("images/git.jpeg");
+}
+#t-two
+{
+background-image: url("images/adobe-ps.jpeg");
+transition:transform ease-in-out 2s;
+}
+#t-three
+{
+	background-image: url("images/sequelpro.jpeg");
+	transition:transform ease-in-out 3s;
+}
+
+#t-one.trans,#t-two.trans,#t-three.trans,#t-four.trans,#t-five.trans {
+  transform:scale(1);
+}
+
+
+
+
+/*#toolbox>div>div:last-child
+{
+	width:inherit;
+	height:inherit;
+}*/
+
+
+#toolbox>div>div:first-child
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	opacity:0;
+	font-family: 'Roboto', sans-serif;
+	font-size:1.2em;
+	font-weight:bold;
+	padding-top:30px;
+	text-align:center;
+}
+
+#toolbox >.item:hover >div:last-child
+{
+	opacity:0.2;
+	z-index:-1;
+}
+#toolbox >.item:hover >div:first-child
+{
+	opacity:1;
+	z-index:2;
+}
+#toolbox>.item>.color-overlay
+{
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #f81b8d;
+  z-index: -1;
+}
+
+#guru {
+  background-image: url("images/virtualguru.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  text-transform: uppercase;
+}
+#guru > .color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #f81b8d;
+  z-index: 1;
+}
+#guru > div:first-child {
+  position: relative;
+  z-index: 2;
+}
+/*#course-wrapper
+{
+	position:absolute;
+	top:0;
+}
+#course-wrapper p
+{
+	
+	font-size:2em;
+	font-family: "Lato", sans-serif;
+
+}
+#courses
+{
+	display:flex;
+	transform:rotateX(90deg);
+	
+	transition:0.5s ease-in;
+	transform-style:preserve-3d;
+	justify-content:space-between;
+	margin-left:50px;
+	margin-right:50px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:100px;
+
+}
+#course-wrapper
+{
+	
+
+}
+
+#course-wrapper:hover #courses
+{
+	transform:rotateX(0deg);
+}
+#course-wrapper:hover p
+
+{
+	opacity:1.0;
+}*/
+#courses > div {
+  height: 170px;
+  width: 400px;
+  border: 1px solid grey;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  display: flex;
+  margin: 10px;
+  align-items: flex-start;
+  position: relative;
+}
+#courses > div img {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+#courses span {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: #0a99ab;
+  padding-top: 12px;
+  font-size: 0.9em;
+  color: #f9e9e8;
+}
+
+#courses > div:hover img {
+  transform: scale(0.8);
+}
+#courses > div:hover span {
+  background-color: #92544a;
+}
+
+#courses {
+  display: flex;
+  justify-content: center;
+}
+#course-wrapper {
+  margin-top: 50px;
+  width: 80%;
+}
+#courses img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*-----MEDIA QUERIES-------*/
+@media (max-width: 768px) {
+  .intro > i {
+    bottom: 1.8em;
+  }
+  i::after {
+    top: 1.1em;
+    font-size: 0.8em;
+    right: 0.2em;
+  }
+}
+
+/*
+#toolset > div {
+  border-bottom: 30px solid rgb(248, 27, 141);
+  border-right: 10px solid rgb(248, 27, 141);
+  border-left: 10px solid rgb(248, 27, 141);
+  padding-top: 20px;
+  height: 300px;
+  flex-basis: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+#toolset > div > div {
+  background-color: rgb(10, 153, 171);
+}
+#tee span,
+#oo1 span,
+#oo2 span,
+#el span,
+#es span {
+  position: absolute;
+  bottom: -25px;
+  font-family: "Lato", sans-serif;
+  color: #f9e234;
+  font-style: italic;
+  font-size: 1.3em;
+  opacity: 0;
+}
+
+#tee .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  transition: opacity 0.2s ease-in, z-index 0.2s ease-in;
+
+  background-image: url("images/git.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#tee:hover > .blur,
+#oo1:hover > .blur,
+#oo2:hover > .blur,
+#el:hover > .blur,
+#es:hover > .blur {
+  opacity: 1;
+  z-index: 2;
+}
+#tee:hover > span,
+#oo1:hover > span,
+#oo2:hover > span,
+#el:hover > span,
+#es:hover > span {
+  opacity: 1;
+}
+#oo1 .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+
+  background-image: url("images/adobe-ps.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#oo2 .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+
+  background-image: url("images/sequelpro.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+#el .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+
+  background-image: url("images/mamp.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#es .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+
+  background-image: url("images/bs.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*RENDERING THE LETTERS IN TOOLS*/
+/*LETTER T*/
+/*#tee .one {
+  position: relative;
+
+  width: 150px;
+  height: 20px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+#tee .two {
+  position: absolute;
+  height: 150px;
+  width: 20px;
+  background-color: rgb(10, 153, 171);
+  left: 45%;
+}
+
+#oo1 .one {
+  width: 150px;
+  position: relative;
+
+  height: 20px;
+}
+#oo1 .two {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 150px;
+  width: 20px;
+  left: 0;
+}
+#oo1 .three {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 20px;
+  width: 150px;
+  left: 0;
+  bottom: 0;
+}
+#oo1 .four {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  width: 20px;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+}
+
+
+#oo2 .one {
+  width: 150px;
+  position: relative;
+
+  height: 20px;
+}
+#oo2 .two {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  width: 20px;
+  left: 0;
+  height: 150px;
+}
+#oo2 .three {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 20px;
+  width: 150px;
+  left: 0;
+  bottom: 0;
+}
+#oo2 .four {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 150px;
+  width: 20px;
+  right: 0;
+  bottom: 0;
+}
+
+#el .one {
+  position: relative;
+
+  height: 150px;
+  width: 20px;
+}
+#el .two {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 20px;
+  width: 70px;
+  left: 0;
+  bottom: 0;
+}
+
+#es .one {
+  position: relative;
+
+  height: 20px;
+  width: 150px;
+}
+#es .two {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 200px;
+  width: 20px;
+  right: 60px;
+  top: -30px;
+  transform: rotate(-50deg);
+}
+#es .three {
+  position: absolute;
+  background-color: rgb(10, 153, 171);
+  height: 20px;
+  width: 150px;
+
+  top: 130px;
+}
+*/
