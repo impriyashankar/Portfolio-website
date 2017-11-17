@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded',function()
 	
 	document.getElementById('ques').style.display='none';
 	document.getElementById('nav-bar').style.display='none';
-	document.getElementById('myNav').style.display='none';
+	//document.getElementById('myNav').style.display='none';
+	document.getElementById('navbar-small').style.display='none';
+	document.getElementById('navbar-hr').style.display='none';
 	/*document.getElementById('one').style.display='none';
 	document.getElementById('two').style.display='none';
 	document.getElementById('three').style.display='none';
@@ -23,6 +25,8 @@ $('#temp-blk').fadeOut(1000,function(){
 	$('#smiley').css('visibility','visible');
 	$('#scroll').css('visibility','visible');
 	$('#nav-bar').fadeIn();
+	$('#navbar-small').fadeIn();
+	$('#navbar-hr').fadeIn();
 	document.body.style.overflow='auto';
 	
 });
