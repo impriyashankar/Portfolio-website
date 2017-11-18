@@ -807,14 +807,19 @@ float:none;
 
 @media(max-width:469px)
 {
+  #km
+  {
+    display:inline-block;
+    margin-top:60px;
+  }
   #smiley
   {
-    top:-6em;
+    top:-7em;
     left:0.3em;
   }
   #scroll
   {
-    top:-7em;
+    top:-10em;
     right:.7em;
   }
   /*.front,.back
