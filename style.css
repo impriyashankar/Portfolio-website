@@ -240,7 +240,7 @@ header {
 #skills>i
 {
   top:410px;
-  -webkit-animation:bounce 1s infinite;
+  animation:bounce 1s infinite;
 }
 
 @keyframes bounce {
@@ -259,6 +259,7 @@ header {
 .flipper {
   flex-grow: 1;
   width: 200px;
+  max-width:100%;
   height: 300px;
 }
 
@@ -273,8 +274,10 @@ header {
 
 }
 
+
 .front {
   padding-left: 10px;
+  overflow-wrap:break-word;
 }
 .flip-container > div:first-child {
   background-color: rgb(197, 29, 2);
@@ -292,8 +295,8 @@ header {
   background-color: rgb(140, 197, 2);
 }
 
-.flipper #one {
-  background-image: url("images/html.png");
+/*.flipper #one {
+  /*background-image: url("images/html.png");
   background-size: cover;
    background-repeat: no-repeat;
 }
@@ -318,7 +321,7 @@ header {
   background-image: url("images/mysql.png");
   background-size: cover;
   background-position: center;
-}
+}*/
 
 .flip-container {
   perspective: 800px;
@@ -357,7 +360,19 @@ header {
 /* back, initially hidden pane */
 .back {
   transform: rotateY(-180deg);
+  background-color: #fff;
 }
+.back>img
+{
+  
+  width:100%;
+  max-width:100%;
+  height:auto;
+
+  display:block;
+ 
+}
+
 
 #tools {
   background-image: url("images/tools-bg.jpg");
@@ -653,6 +668,18 @@ footer
 }
 
 /*-----MEDIA QUERIES-------*/
+@media(max-width:1000px)
+{
+  .flip-container
+  {
+    
+    justify-content: center;
+  }
+  .flipper
+  {
+    flex-grow:0;
+  }
+}
 
 @media(min-width:768px) and (max-width:992px)
 {
@@ -698,6 +725,7 @@ footer
     margin-bottom:0;
     margin-top:0;
   }
+
   #navbar-small a
   {
     padding:10px;
@@ -769,7 +797,7 @@ float:none;
 {
   .flip-container
   {
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
   }
   /*.front
   {
@@ -783,6 +811,10 @@ float:none;
 
   {
     font-size:1.1em;
+  }
+  #intro-text
+  {
+    bottom:50px;
   }
   #guru >div>h1,#skills>h1,#intro-text>h1
   {
@@ -802,6 +834,27 @@ float:none;
     max-width:50%;
   }
 
+  #toolxp .toolx-top
+{
+
+padding-bottom:10px;
+
+font-size:1.8em;
+
+}
+#skills>p,#skills>i
+{
+  position:relative;
+  top:370px;
+  z-index:2;
+  font-size:1.2em;
+  
+}
+#skills>i
+{
+  top:380px;
+  animation:bounce 1s infinite;
+}
 }
 
 /*
