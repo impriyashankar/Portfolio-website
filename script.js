@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function()
 {
-	//document.body.style.overflow='hidden';
+	document.body.style.overflow='hidden';
 	
 	document.getElementById('ques').style.display='none';
 	document.getElementById('nav-bar').style.display='none';

@@ -370,6 +370,7 @@ header {
   height:auto;
 
   display:block;
+  overflow:hidden;
  
 }
 
@@ -749,6 +750,10 @@ footer
  #navbar-small img {
   border-radius: 50%;
 }
+#base
+{
+  display:none;
+}
 #toolxp>.tool-exp
 {
   display:block;
@@ -807,7 +812,7 @@ float:none;
 
 @media(max-width:469px)
 {
-  #km
+  /*#km
   {
     display:inline-block;
     margin-top:60px;
@@ -821,16 +826,16 @@ float:none;
   {
     top:-10em;
     right:.7em;
-  }
+  }*/
   /*.front,.back
   {
     width:100vw;
   }*/
-  .flipper
+  /*.flipper
   
   {
     width:100%;
-  }
+  }*/
   #ques
 
   {
@@ -884,6 +889,17 @@ font-size:1.8em;
   25%, 75% { top:365px; }
   50%      { top:360px; }
   100%     {top:370px;}
+}
+}
+@media(max-width:360px)
+{
+    #toolxp .toolx-top
+{
+
+padding-bottom:5px;
+
+font-size:1.2em;
+
 }
 }
 
