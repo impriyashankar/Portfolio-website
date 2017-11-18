@@ -259,7 +259,7 @@ header {
 .flipper {
   flex-grow: 1;
   width: 200px;
-  max-width:100%;
+  /*max-width:100%;*/
   height: 300px;
 }
 
@@ -807,6 +807,14 @@ float:none;
 
 @media(max-width:469px)
 {
+  #scroll
+  {
+    top:-2em;
+  }
+  .flipper
+  {
+    max-width:100vw;
+  }
   #ques
 
   {
@@ -852,8 +860,14 @@ font-size:1.8em;
 }
 #skills>i
 {
-  top:380px;
+  top:370px;
   animation:bounce 1s infinite;
+}
+@keyframes bounce {
+  0%       { top:370px; }
+  25%, 75% { top:365px; }
+  50%      { top:360px; }
+  100%     {top:370px;}
 }
 }
 
