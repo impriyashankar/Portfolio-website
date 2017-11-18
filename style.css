@@ -807,13 +807,24 @@ float:none;
 
 @media(max-width:469px)
 {
+  #smiley
+  {
+    top:-6em;
+    left:0.3em;
+  }
   #scroll
   {
-    top:-2em;
+    top:-7em;
+    right:.7em;
   }
-  .front,.back
+  /*.front,.back
   {
     width:100vw;
+  }*/
+  .flipper
+  
+  {
+    width:100%;
   }
   #ques
 
