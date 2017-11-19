@@ -587,7 +587,7 @@ footer {
   #navbar-small img {
     border-radius: 50%;
   }
-  #base {
+  #base ,#tool-tip{
     display: none;
   }
   #toolxp > .tool-exp {
