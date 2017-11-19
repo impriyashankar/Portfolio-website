@@ -19,35 +19,30 @@
         <div class="navbar-header">
           <div class="navbar-brand">
             <p>MY RESUME</p>
-          </div><hr class="visible-xs" id="navbar-hr">
-          <div class="visible-xs">
-           <ul class="nav navbar-nav text-center" id="navbar-small">
-            <!--class="nav navbar-nav navbar-right"-->
-            <li>
-              <a href="https://github.com/impriyashankar"><img src="images/gh.png" width="40px" height="40px" alt="github"></a>
-            </li>
-            <li>
-              <a href="https://codepen.io/impriyashankar/"><img src="images/codepen.png" width="40px" height="40px" alt="codepen"></a>
-            </li>
-            <li>
-              <a href="https://medium.com/@impriyashankar"><img src="images/medium.png" width="40px" height="40px" alt="medium"></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/priya-shankar-b5692833/"><img src="images/linkedin.png" width="40px" height="40px" alt="linkedin"></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/impriyashankar"><img src="images/twitter.png" width="40px" height="40px" alt="twitter"></a>
-            </li>
-            
-          </ul>
           </div>
-          <!--
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav" id="toggle-btn" aria-expanded="false">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
+          <hr class="visible-xs" id="navbar-hr">
+          <div class="visible-xs">
+            <ul class="nav navbar-nav text-center" id="navbar-small">
+              <!--class="nav navbar-nav navbar-right"-->
+              <li>
+                <a href="https://github.com/impriyashankar"><img src="images/gh.png" width="40px" height="40px" alt="github"></a>
+              </li>
+              <li>
+                <a href="https://codepen.io/impriyashankar/"><img src="images/codepen.png" width="40px" height="40px" alt="codepen"></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@impriyashankar"><img src="images/medium.png" width="40px" height="40px" alt="medium"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/priya-shankar-b5692833/"><img src="images/linkedin.png" width="40px" height="40px" alt="linkedin"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/impriyashankar"><img src="images/twitter.png" width="40px" height="40px" alt="twitter"></a>
+              </li>
 
-</button>-->
+            </ul>
+          </div>
+
         </div>
         <div class="collapse navbar-collapse text-right">
           <ul class="nav navbar-nav navbar-right" id="nav-bar">
@@ -67,7 +62,7 @@
             <li><a href="#">twitter</a>
               <a href="https://twitter.com/impriyashankar"><img src="images/twitter.png" width="40px" height="40px" alt="twitter"></a>
             </li>
-            
+
           </ul>
         </div>
 
@@ -75,13 +70,7 @@
 
     </nav>
   </header>
-  <!--<div id="myNav">
-    <div id="one"><img src="images/gh.png" width="30px" height="30px" alt="github"></div>
-    <div id="two"><img src="images/codepen.png" width="30px" height="30px" alt="codepen"></div>
-    <div id="three"><img src="images/gh.png" width="30px" height="30px" alt="linkedin"></div>
-    <div id="four"><img src="images/gh.png" width="30px" height="30px" alt="twitter"></div>
-    <div id="five"><img src="images/gh.png" width="30px" height="30px" alt="medium"></div>
-  </div>-->
+
   <!--INTRO SECTION-->
   <section class="intro text-center">
     <div id="intro-text">
@@ -114,7 +103,7 @@
     </div>
     <div class="skillset">
       <div class="flip-container">
-        <div class="flipper">
+        <div class="flipper" ontouchstart="this.classList.toggle('hover');">
           <div class="front">
             <p>
 
@@ -127,7 +116,7 @@
             </p>
           </div>
           <div class="back" id="one">
-              <img src="images/html.png" alt="html">
+            <img src="images/html.png" alt="html" width="250" height="250">
           </div>
         </div>
         <div class="flipper">
@@ -142,7 +131,7 @@
             </p>
           </div>
           <div class="back" id="two">
-              <img src="images/css.png" alt="css">
+            <img src="images/css.png" alt="css" width="250" height="250">
           </div>
         </div>
         <div class="flipper">
@@ -153,7 +142,7 @@
             </p>
           </div>
           <div class="back" id="three">
-              <img src="images/javascript.png" alt="js">
+            <img src="images/javascript.png" alt="js" width="250" height="250">
           </div>
         </div>
         <div class="flipper">
@@ -163,7 +152,7 @@
             </p>
           </div>
           <div class="back" id="four">
-              <img src="images/php.png" alt="php">
+            <img src="images/php.png" alt="php" width="250" height="250">
           </div>
         </div>
         <div class="flipper">
@@ -173,7 +162,7 @@
             </p>
           </div>
           <div class="back" id="five">
-              <img src="images/mysql.png" alt="mysql" width="280" height="300">
+            <img src="images/mysql.png" alt="mysql" width="250" height="250">
           </div>
         </div>
 
@@ -188,126 +177,69 @@
 
     <div id="toolset">
       <div id="toolbox" class="container">
-      <!--The Tree shape in Tools section-->
+        <!--The Tree shape in Tools section-->
 
-      <div class="triangle hidden-xs" id="base" >
-  <div class="triangle" id="tr-two" onclick="showDesc('1')"></div>
-    <div class="triangle" id="tr-three" onclick="showDesc('2')"></div>
-      <div class="triangle" id="tr-four" onclick="showDesc('3')"></div>
-        <div class="triangle" id="tr-five" onclick="showDesc('4')"></div>
+        <div class="triangle hidden-xs" id="base">
+          <div class="triangle" id="tr-two" onclick="showDesc('1')"></div>
+          <div class="triangle" id="tr-three" onclick="showDesc('2')"></div>
+          <div class="triangle" id="tr-four" onclick="showDesc('3')"></div>
+          <div class="triangle" id="tr-five" onclick="showDesc('4')"></div>
+        </div>
+
+
+        <div id="toolxp">
+
+          <div class="tool-exp" id="git">
+            <div class="toolx-top text-center">
+              <!--<img src="images/git.jpeg" width="40" height="40" alt="logo-img">-->
+              <span>Git</span>
+            </div>
+            <div class="toolx-bottom text-center">
+              <p>I have used github for coding exercises and am familiar with the basic Git operations.</p>
+            </div>
+          </div>
+
+          <div class="tool-exp" id="mamp">
+            <div class="toolx-top text-center">
+              <!--<img src="images/mamp.png" width="40" height="40" alt="logo-img">-->
+              <span>MAMP</span>
+            </div>
+            <div class="toolx-bottom text-center">
+              <p>I have used MAMP server for developing an e-commerce site(mini-project) with SQL and php integrations.</p>
+            </div>
+          </div>
+
+
+          <div class="tool-exp" id="ps">
+            <div class="toolx-top text-center">
+              <!--<img src="images/adobe-ps.jpeg" width="40" height="40" alt="logo-img">-->
+              <span>Adobe Photoshop</span>
+            </div>
+            <div class="toolx-bottom text-center">
+              <p>I know the basics of this tool. I have used Photoshop to study color correction and enhancements, and to layout and mock up a web design.</p>
+            </div>
+          </div>
+
+          <div class="tool-exp" id="sequelpro">
+            <div class="toolx-top text-center">
+              <!-- <img src="images/sequelpro.jpeg" width="40" height="40" alt="logo-img">-->
+              <span>SequelPro</span>
+            </div>
+            <div class="toolx-bottom text-center">
+              <p>I am aware of SQL basics and used this tool to record data input from user for e-commerce site mini project.</p>
+            </div>
+          </div>
+
+
+        </div>
       </div>
 
 
-
-
-      <div id="toolxp">
-
-      <div class="tool-exp" id="git">
-      <div class="toolx-top text-center">
-        <!--<img src="images/git.jpeg" width="40" height="40" alt="logo-img">-->
-        <span>Git</span>
-      </div>
-      <div class="toolx-bottom text-center">
-        <p>I have used github for coding exercises and am familiar with the basic Git operations.</p>
-      </div>
-</div>
-
-<div class="tool-exp" id="mamp">
-      <div class="toolx-top text-center">
-        <!--<img src="images/mamp.png" width="40" height="40" alt="logo-img">-->
-        <span>MAMP</span>
-      </div>
-      <div class="toolx-bottom text-center">
-        <p>I have used MAMP server for developing an e-commerce site(mini-project) with SQL and php integrations.</p>
-      </div>
-</div>
-
-
-
-<div class="tool-exp" id="ps">
-      <div class="toolx-top text-center">
-        <!--<img src="images/adobe-ps.jpeg" width="40" height="40" alt="logo-img">-->
-        <span>Adobe Photoshop</span>
-      </div>
-      <div class="toolx-bottom text-center">
-        <p>I know the basics of this tool. I have used Photoshop to study color correction and enhancements, and to layout and mock up a web design.</p>
-      </div>
-</div>
-
-<div class="tool-exp" id="sequelpro">
-      <div class="toolx-top text-center">
-       <!-- <img src="images/sequelpro.jpeg" width="40" height="40" alt="logo-img">-->
-        <span>SequelPro</span>
-      </div>
-      <div class="toolx-bottom text-center">
-        <p>I am aware of SQL basics and used this tool to record data input from user for e-commerce site mini project.</p>
-      </div>
-</div>
-
-
-
-
-</div>
-</div>
-
-    
-
-<div id="tool-tip" class="text-center hidden-xs">Click on any color in the color treetop to pick a tool.</div>
+      <div id="tool-tip" class="text-center hidden-xs">Click on any color in the color treetop to pick a tool.</div>
     </div>
 
   </section>
 
-
-  
-
-     
-      		<!--<div class="triangle" id="base">
-  <div class="triangle" id="tr-two">
-    <div class="triangle" id="tr-three">
-      <div class="triangle" id="tr-four">
-        <div class="triangle" id="tr-five"></div>
-      </div>
-    </div>
-
-
-  </div>
-</div>-->
-
-  
-
-
-
-        <!--<div class="item"> 
-        	<div><p>My goto-tool for backing up my creative works!</p></div>
-        	
-        	<div id="t-one"></div>
-        	
-        </div>
-        <div class="item" >
-        	<div><p>I have dabbled with the toolset and am aware of the basic operations.</p></div>
-        	
-        	<div id="t-two"></div>
-        	
-        </div>
-        <div class="item">
-        	<div><p>I used this for storing backend data in an e-commerce assignement of mine.</p></div>
-        	
-        	<div id="t-three"></div>
-        	
-        </div>
-        <div class="item"> 
-        	<div><p> I got a feel of seamless server control..for a change!</p></div>
-        
-        	<div id="t-four"></div>
-        	
-        </div>
-        <div class="item">
-        	<div><p> It lets me perform synchronised browser testing.</p></div>
-        	
-        	<div id="t-five"></div>
-        	
-        </div>-->
-    
 
   <!--SECTION VIRTUAL GURUS -->
   <section>
@@ -326,34 +258,38 @@
     <div id="course-wrapper" class="container">
       <div class="row" id="courses">
         <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one">
-<div>
-        <img src="images/coursera.jpeg">
-          <p>Coursera</p></div>
-
+          <div>
+            <img src="images/coursera.jpeg">
+            <p>Coursera</p>
           </div>
+
+        </div>
         <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 two">
-        <div><img src="images/codecademy.png">
-          <p>Codecademy</p></div>
+          <div><img src="images/codecademy.png">
+            <p>Codecademy</p>
           </div>
-        <div class="col-xxs-12 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 three"><div><img src="images/internshala.png">
-          <p>Internshala</p></div>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 three">
+          <div><img src="images/internshala.png">
+            <p>Internshala</p>
+          </div>
 
-          </div>
+        </div>
       </div>
     </div>
 
 
   </section>
-<hr>
+  <hr>
   <section id="other">
-  <div class="container">
-  <h2> My interests</h2>
-  <p id="first-line">My brain releases happy chemicals when I devote time to play with my kids, do outdoorsy activities, pen down my mind or watch movies. I choose Yoga as my ultimate stress buster and love to dish out little surprises of quick bites to my little ones.</p>
-  </div>
+    <div class="container">
+      <h2> My interests</h2>
+      <p id="first-line">My brain releases happy chemicals when I devote time to play with my kids, do outdoorsy activities, pen down my mind or watch movies. I choose Yoga as my ultimate stress buster and love to dish out little surprises of quick bites to my little ones.</p>
+    </div>
   </section>
   <hr id="end">
   <footer>
-  <div class="text-center">Get in Touch : impriyashankar@gmail.com</div>
+    <div class="text-center">Get in Touch : impriyashankar@gmail.com</div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -362,60 +298,3 @@
 </body>
 
 </html>
-
-<!--<div id="toolset">
-      <div id="tee">
-        <div class="blur"></div>
-        <div class="one">
-          <div class="two">
-          </div>
-        </div>
-        <span>git</span>
-      </div>
-      <div id="oo1">
-        <div class="blur"></div>
-        <div class="one">
-          <div class="two">
-            <div class="three">
-              <div class="four">
-              </div>
-            </div>
-          </div>
-        </div>
-        <span>Adobe Photoshop</span>
-      </div>
-
-
-      <div id="oo2">
-        <div class="blur"></div>
-        <div class="one">
-          <div class="two">
-            <div class="three">
-              <div class="four">
-              </div>
-            </div>
-          </div>
-        </div>
-        <span>SequelPro</span>
-      </div>
-      <div id="el">
-        <div class="blur"></div>
-        <div class="one">
-          <div class="two">
-          </div>
-        </div>
-        <span>MAMP</span>
-      </div>
-      <div id="es">
-        <div class="blur"></div>
-        <div class="one">
-          <div class="two">
-          </div>
-          <div class="three">
-
-
-          </div>
-        </div>
-        <span>Browsersync</span>
-      </div>
-    </div>-->
