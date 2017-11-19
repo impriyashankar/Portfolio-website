@@ -137,11 +137,16 @@ header {
   max-width: 100%;
   /*border-radius: 25%;*/
 }
-.intro > i {
+#smiley,#scroll
+{
+  display:inline-block;
+  text-align:center;
+}
+#smiley {
   font-size: 8em;
   position: relative;
   bottom: 3em;
-  left: 0.2em;
+  /*left: 0.2em;*/
   color: #f9e234;
   z-index: 2;
   margin: 0 auto;
@@ -150,7 +155,7 @@ header {
   font-size: 3em;
   position: relative;
   top: -5em;
-  right: 1.2em;
+  /*right: 1.2em;*/
   color: #f9e234;
   z-index: 2;
 }
@@ -536,10 +541,10 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .intro > i {
+  #smiley{
     top: -3.8em;
     font-size: 5em;
-    left: 0.1em;
+    
   }
   /*i::after {
     top: 1.1em;
@@ -633,7 +638,7 @@ footer {
 @media (max-width: 469px) {
   #scroll
   {
-    right:.9em;
+    /*right:.9em;*/
     top:-6em;
   }
   #ques {
