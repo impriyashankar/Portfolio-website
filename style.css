@@ -631,6 +631,11 @@ footer {
 }
 
 @media (max-width: 469px) {
+  #scroll
+  {
+    right:.9em;
+    top:-6em;
+  }
   #ques {
     font-size: 1.1em;
   }
