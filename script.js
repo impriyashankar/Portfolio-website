@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).fadeOut();
     $("#ques").fadeIn(4000, function() {
       $("#temp-blk").fadeOut(1000, function() {
-        $("#smiley").css("visibility", "visible");
+       // $("#smiley").css("visibility", "visible");
         $("#scroll").css("visibility", "visible");
         $("#nav-bar").fadeIn();
         $("#navbar-small").fadeIn();
