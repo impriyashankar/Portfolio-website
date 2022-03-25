@@ -591,7 +591,7 @@ footer {
 }
 
 .tool-link:hover p.details {
-  display: block;
+  /*display: block;*/
   word-wrap: break-word;
 }
 
@@ -642,7 +642,7 @@ footer {
   width:100%;
 }
 .tool-link p.title{
-  font-size:17px;
+  font-size:18px;
   margin-top:5px;
   font-weight:bold;
 
@@ -763,6 +763,15 @@ p.details {
   #scroll {
     top: -5em;
   }
+  .tag-container {
+    display:none;
+  }
+
+  #skills > h1,
+#tools > h1,
+#guru > div > h1 {
+  padding-top: 0px;
+}
 }
 
 @media (max-width: 600px) {
@@ -789,6 +798,9 @@ p.details {
 }
 
 @media (max-width: 469px) {
+  p.details {
+    display:none;
+  }
   #scroll
   {
     /*right:.9em;*/
@@ -803,7 +815,7 @@ p.details {
   #guru > div > h1,
   #skills > h1,
   #intro-text > h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   #tools > h1 {
     font-size: 30px;
