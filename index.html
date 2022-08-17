@@ -5,485 +5,79 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Source+Serif+Pro|Fira+Mono|Roboto|Fredoka+One" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/6.1.2/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Source+Serif+Pro|Fira+Mono|Roboto|Fredoka+One"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>My Resume</title>
 </head>
 
 <body>
-  <!--NAVIGATION BLOCK-->
-  <header>
-    <nav id="top-blk">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <div class="navbar-brand">
-            <p>MY RESUME</p>
+  <!-- Navigation Block-->
+  <div class="container">
+    <section class="hero">
+      <nav>
+        <div class="header">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo">
           </div>
-          <hr class="visible-xs" id="navbar-hr">
-          <div class="visible-xs">
-            <ul class="nav navbar-nav text-center" id="navbar-small">
-              <!--class="nav navbar-nav navbar-right"-->
-              <li>
-                <a href="https://github.com/impriyashankar" target="_blank"><img src="images/gh.png" width="40px" height="40px" alt="github"></a>
-              </li>
-              <li>
-                <a href="https://codepen.io/impriyashankar/" target="_blank"><img src="images/codepen.png" width="40px" height="40px" alt="codepen"></a>
-              </li>
-              <li>
-                <a href="https://medium.com/@preiyah" target="_blank"><img src="images/medium.png" width="40px" height="40px" alt="medium"></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/priyashankarkp/" target="_blank"><img src="images/linkedin.png" width="40px" height="40px" alt="linkedin"></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/impriyashankar" target="_blank"><img src="images/twitter.png" width="40px" height="40px" alt="twitter"></a>
-              </li>
+          <div class="menu">
+            <i class="fa fa-solid fa-bars"></i>
+          </div>
+          <div class="menu-expanded">
+            <div class="menu-items">
+              <a href="#">About</a>
+              <a href="#">Skills</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact</a>
+              <button class="btn-resume">
+                <a href="#">Resume</a>
+              </button>
+            </div>
+            <div class="menu-icon-cross">
+              <i class="fa fa-solid fa-xmark"></i>
+            </div>
 
-            </ul>
           </div>
+          <div class="menu-lg">
+            <div class="menu-items-lg">
+              <a href="#">About</a>
+              <a href="#">Skills</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact</a>
+              <button class="btn-resume">
+                <a href="#">Resume</a>
+              </button>
+            </div>
+            <div class="menu-icon-cross">
+              <i class="fa fa-solid fa-xmark"></i>
+            </div>
+
+          </div>
+
 
         </div>
-        <div class="collapse navbar-collapse text-right">
-          <ul class="nav navbar-nav navbar-right" id="nav-bar">
-            <!--class="nav navbar-nav navbar-right"-->
-            <li><a href="#">github</a>
-              <a href="https://github.com/impriyashankar" target="_blank"><img src="images/gh.png" width="40px" height="40px" alt="github"></a>
-            </li>
-            <li><a href="#">codepen</a>
-              <a href="https://codepen.io/impriyashankar/" target="_blank"><img src="images/codepen.png" width="40px" height="40px" alt="codepen"></a>
-            </li>
-            <li><a href="#">medium</a>
-              <a href="https://medium.com/@preiyah" target="_blank"><img src="images/medium.png" width="40px" height="40px" alt="medium"></a>
-            </li>
-            <li><a href="#">linkedin</a>
-              <a href="https://www.linkedin.com/in/priyashankarkp/" target="_blank"><img src="images/linkedin.png" width="40px" height="40px" alt="linkedin"></a>
-            </li>
-            <li><a href="#">twitter</a>
-              <a href="https://twitter.com/impriyashankar" target="_blank"><img src="images/twitter.png" width="40px" height="40px" alt="twitter"></a>
-            </li>
-
-          </ul>
-        </div>
+      </nav>
+      <!-- Hero Block-->
+      <div class="intro">
+        <p>Hi, my name is</p>
+        <h1 class="name">Priya Shankar</h1>
+        <h1>Think of a good tag line</h1>
+        <p>I'm a Web Developer based in Amsterdam, Netherlands</p>
 
       </div>
+      <a class="btn-scroll" href="#">
 
-    </nav>
-  </header>
+      </a>
 
-  <!--INTRO SECTION-->
-  <section class="intro text-center">
-    <div id="intro-text">
-      <h1>HI I'M PRIYA!
-      </h1><h2>Full Stack Web Developer</h2>
-      <!--<div id="temp-blk">
-        <p>And I just said "Yes!"</p>
-        <a href="#" id="km">KNOW MORE</a>
-        <div id="ques">
-          <p>Someone asked, "Do you know how to create a web page?"</p>
-          <p>And I said "Yes!"</p>
-        </div>
-      </div>-->
-    </div>
-    <!--<div><i class="fa fa-smile-o" id="smiley"></i></div>-->
-    <div><a href="#about-me" id="scroll"><i class="fa fa-chevron-down"></i></a></div>
-    <div class="color-overlay"></div>
-  </section>
-  <div class="container" id="about-me">
-    <p><!--I have experience working on web development and maintenance projects in the fields of digital marketing services and
-      IT services respectively. I went through a break in my career and used it as an opportunity to upskill myself by means
-      of self-learning and completion of online courses. Having developed a passion for coding in various programming
-      languages, I look forward to dabbling with software programs again.-->
-      Originally from Chennai, India, I have 5 years of experience in support, maintenance and development as a software engineer. I completed a full-stack web development course at Le Wagon recently.
-
- I am a self-learner. I upskilled my programming during my career break and single-handedly executed web development work at a marketing firm. I enjoy focused development hours and I am looking forward to rebooting my career in software development.<!--Criss Angel's magic always gives me goosebumps and coding comes in a close second. I got my hands dirty in software development a decade ago in the scope of backstage crew. Now as an aspiring front-end web developer, I wait in the front row to let
-      my sleight of code perform and witness pure magic!--></p>
+    </section>
   </div>
-
-  <!--SECTION LP -->
- <!--<section>
-    <div id="guru1">
-
-      <div>
-        <h1 class="text-center">BRIEF PORTFOLIO OF WORK</h1></div>
-
-      <div class="color-overlay"></div>
-    </div>
-
-
-
-
-    <div id="course-wrapper1" class="container">
-      <div class="row" id="courses">
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one">
-          <div>
-            <a href="http://www.sace.ssn.edu.in/pg-program-%20business-analytics-data-science.html"><img src="images/SSN.png">
-              <p style="background-color:#000;">SSN SACE</p></a>
-          </div>
-
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one">
-          <div>
-            <a href="https://thequad.in/bootcamp-signup-page/">
-            <img src="images/THEQUAD.png">
-              <p style="background-color:#000;">The Quad</p></a>
-          </div>
-
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one">
-          <div><a href="https://thedaily9.in/buy-now.html">
-            <img src="images/DAILY9.png">
-            <p style="background-color:#000;">The Daily9</p></a>
-          </div>
-
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 two">
-          <div><a href="https://www.grandebayresort.in/outing_lp.php"><img src="images/GrandeBay.png">
-            <p style="background-color:#000;">Grande Bay Resorts</p></a>
-          </div>
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 three">
-          <div><a href="http://www.parrywellness.co.in/everyday-superfoods.html"><img src="images/Parrys.png">
-            <p style="background-color:#000;">Parry Wellness</p></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-  </section>-->
-  <!--SKILLS SECTION-->
-  <section>
-
-    <!--<div id="skills" class="text-center">
-      <h1>skills</h1>
-      <p>Let's hover the cards below to play flip!</p>
-      <i class="fa fa-arrow-down"></i>
-      <div class="color-overlay"></div>
-    </div>
-    <div class="skillset">
-      <div class="flip-container">
-        <div class="flipper" ontouchstart="this.classList.toggle('hover');">
-          <div class="front">
-            <p>
-
-              &lt;div&gt; Can you guess me?<br> &lt;ul&gt;
-
-              <br> Clue time..<br> &lt;li&gt; I start with a 'H' &lt;/li&gt;
-              <br> &lt;li&gt; I am made up of tags &lt;/li&gt;
-              <br> &lt;li&gt; I do good make-up..Err..Mark-up! &lt;/li&gt; &lt;/ul&gt;
-              <br> &lt;/div&gt;
-            </p>
-          </div>
-          <div class="back" id="one">
-            <img src="images/html.png" alt="html" width="250" height="250">
-          </div>
-        </div>
-        <div class="flipper">
-          <div class="front">
-            <p>
-              div.a<br> {
-              <br> content:'style';
-              <br> position:layout-and-spacing;
-              <br> color:'unlimited-combinations';
-              <br> background:'guess-who?'
-              <br> }
-            </p>
-          </div>
-          <div class="back" id="two">
-            <img src="images/css.png" alt="css" width="250" height="250">
-          </div>
-        </div>
-        <div class="flipper">
-          <div class="front">
-            <p>var a = "a coffee";<br> var b = "a form of text";<br> console.log(a.concat(b));
-              <br> /*What will it print?*/
-
-            </p>
-          </div>
-          <div class="back" id="three">
-            <img src="images/javascript.png" alt="js" width="250" height="250">
-          </div>
-        </div>
-        <div class="flipper">
-          <div class="front">
-            <p>
-              $a = "poly-hydroxylamino-propionyl";<br> echo 'acronym of' . $a; //Any ideas?
-            </p>
-          </div>
-          <div class="back" id="four">
-            <img src="images/php.png" alt="php" width="250" height="250">
-          </div>
-        </div>
-        <div class="flipper">
-          <div class="front">
-            <p>
-              mysql_connect ('Knowledge DB','Priya','^(%^#$');<br> mysql_query("What is it now?");
-            </p>
-          </div>
-          <div class="back" id="five">
-            <img src="images/mysql.png" alt="mysql" width="250" height="250">
-          </div>
-        </div>
-
-      </div>
-    </div>-->
-  </section>
-  <!--TOOLS SECTION-->
-  <section>
-    <div id="tools" class="text-center">
-      <h1>Portfolio</h1>
-    </div>
-
-    <div id="toolset">
-      <div id="toolbox" class="container">
-        <div class="container img-container mb-40">
-          <div class = "tool-link">
-            <img src="./images/Ecolympians-proj.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">SCSS</button>
-              <button type="button" class="button-tag">Javascript</button>
-              <button type="button" class="button-tag">Ruby on Rails</button>
-              <button type="button" class="button-tag">Stimulus</button>
-            </div>
-            <p class="title">Ecolympians</p>
-            <div class="details-container">
-              <p class="details">This is a mobile-first app that allows you to collaborate with your friends to do real-world tasks that would reduce your ecological footprint.
-
-                The app is intended to gamify the spirit of sustainability and introduce a sense of competitiveness within community to motivate and foster acts of sustainability.</p>
-                <div style="margin-top:3rem;"><a href="http://www.ecolympians.fun/" target="_blank" class="btn btn-flat">View Project</a></div>
-              </div>
-
-          </div>
-
-          <div class = "tool-link">
-            <img src="./images/toys4rent-proj.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">SCSS</button>
-              <button type="button" class="button-tag">Javascript</button>
-              <button type="button" class="button-tag">Ruby on Rails</button>
-              <button type="button" class="button-tag">Ruby</button>
-            </div>
-            <p class="title">Toys4Rent</p>
-            <div class="details-container">
-              <p class="details">Toys4Rent is a marketplace app for renting out toys that you stop using, and for renting other people's toys, instead of buying new, expensive ones.</p>
-              <div style="margin-top:3rem;"><a href="https://toys4rent.herokuapp.com/" target="_blank" class="btn btn-flat">View Project</a></div>
-            </div>
-          </div>
-
-          <div class = "tool-link">
-           <img src="./images/movie-list-proj.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">CSS</button>
-              <button type="button" class="button-tag">Javascript</button>
-              <button type="button" class="button-tag">Ruby on Rails</button>
-              <button type="button" class="button-tag">Stimulus</button>
-            </div>
-            <p class="title">Movie watch-list</p>
-            <div class="details-container">
-              <p class="details">This is a rails app that also includes Stimulus implementation. This was also the first time I worked with Cloudinary and production deployment scenarios with Heroku.</p>
-              <div style="margin-top:3rem;"><a href="https://priya-lewagon-watchlist.herokuapp.com/" target="_blank" class="btn btn-flat">View Project</a></div>
-
-            </div>
-          </div>
-
-          <div class = "tool-link">
-            <img src="./images/quad-proj.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">CSS</button>
-              <button type="button" class="button-tag">WordPress</button>
-            </div>
-            <p class="title">The Quad Bootcamp</p>
-            <div class="details-container">
-              <p class="details">The Quad is new age fitness enterprise based out of the city of Chennai. This landing page collected leads for their bootcamp sessions. The website was wordpress-based and the page interacts with plugins to collect form submissions.</p>
-              <div style="margin-top:3rem;"><a href="https://thequad.in/bootcamp-signup-page/" target="_blank" class="btn btn-flat">View Project</a></div>
-            </div>
-          </div>
-
-          <div class = "tool-link">
-         <img src="./images/GrandeBay.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">CSS</button>
-            </div>
-            <p class="title">GrandeBay Resort Conferences</p>
-            <div class="details-container">
-              <p class="details">Grande Bay Resort and Spa is a boutique hotel set on ECR, along the coast of the Bay of Bengal. The landing page was created to build leads for their conference spaces. The form submissions were directed to an email address at the resort's end.</p>
-              <div style="margin-top:3rem;"><a href="https://www.grandebayresort.in/conference_lp.php" target="_blank" class="btn btn-flat">View Project</a></div>
-            </div>
-          </div>
-
-          <div class = "tool-link">
-            <a href="#"><img src="./images/restaurant-proj.png"/></a>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">CSS</button>
-              <button type="button" class="button-tag">Bootstrap</button>
-
-            </div>
-            <p class="title">David Chu's Restaurant</p>
-            <div class="details-container">
-              <p class="details">This was one of my first web development projects that was also a part of an assignment on 'Coursera'. A replica of the website was produced from scratch based on a visual design provided.</p>
-
-            </div>
-          </div>
-
-          <div class = "tool-link">
-           <img src="./images/Parrys.png"/>
-            <div class="tag-container">
-              <button type="button" class="button-tag">HTML5</button>
-              <button type="button" class="button-tag">CSS</button>
-
-            </div>
-            <p class="title">Parry Wellness</p>
-            <div class="details-container">
-              <p class="details">Parry Wellness used this landing page to give potential consumers an Amazon coupon code. The page is mobile-responsive.</p>
-              <div style="margin-top:3rem;"><a href="https://parrywellness.co.in/everyday-superfoods.html" target="_blank" class="btn btn-flat">View Project</a></div>
-            </div>
-          </div>
-
-
-
-        </div>
-        <!--The Tree shape in Tools section-->
-
-        <!--<div class="triangle hidden-xs" id="base">
-          <div class="triangle" id="tr-two" onclick="showDesc('1')"></div>
-          <div class="triangle" id="tr-three" onclick="showDesc('2')"></div>
-          <div class="triangle" id="tr-four" onclick="showDesc('3')"></div>
-          <div class="triangle" id="tr-five" onclick="showDesc('4')"></div>
-        </div>
-
-
-        <div id="toolxp">
-
-          <div class="tool-exp" id="git">
-            <div class="toolx-top text-center">
-
-              <span>Git</span>
-            </div>
-            <div class="toolx-bottom text-center">
-              <p>I have used github for coding exercises and am familiar with the basic Git operations.</p>
-            </div>
-          </div>
-
-          <div class="tool-exp" id="mamp">
-            <div class="toolx-top text-center">
-
-              <span>MAMP</span>
-            </div>
-            <div class="toolx-bottom text-center">
-              <p>I have used MAMP server for developing an e-commerce site(mini-project) with SQL and php integrations.</p>
-            </div>
-          </div>
-
-
-          <div class="tool-exp" id="ps">
-            <div class="toolx-top text-center">
-
-              <span>Adobe Photoshop</span>
-            </div>
-            <div class="toolx-bottom text-center">
-              <p>I know the basics of this tool. I have used Photoshop to study color correction and enhancements, and to layout and mock up a web design.</p>
-            </div>
-          </div>
-
-          <div class="tool-exp" id="sequelpro">
-            <div class="toolx-top text-center">
-
-              <span>SequelPro</span>
-            </div>
-            <div class="toolx-bottom text-center">
-              <p>I am aware of SQL basics and used this tool to record data input from user for e-commerce site mini project.</p>
-            </div>
-          </div>
-
-
-        </div>-->
-      </div>
-
-
-      <!--<div id="tool-tip" class="text-center hidden-xs">Click on any color in the color treetop to pick a tool.</div>-->
-    </div>
-
-  </section>
-
-
-  <!--SECTION VIRTUAL GURUS -->
-  <section>
-    <div id="guru">
-
-      <div>
-        <h1 class="text-center">coding education</h1></div>
-
-      <div class="color-overlay"></div>
-    </div>
-
-    <!--<p class="text-center">Gosh ! Where's my content? <br>Could you please hover?
-</p>-->
-
-
-    <div id="course-wrapper" class="container">
-      <div class="row" id="courses">
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one mb-3">
-          <div>
-            <img src="images/le-wagon-logo.jpeg" style="height:75%;">
-            <p>Le Wagon bootcamp</p>
-          </div>
-
-        </div>
-
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one mb-3">
-          <div>
-            <img src="images/udemy-logo.png">
-            <p>Udemy</p>
-          </div>
-
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 one mb-3">
-          <div>
-            <img src="images/coursera.jpeg">
-            <p>Coursera</p>
-          </div>
-
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 two">
-          <div><img src="images/codecademy.png">
-            <p>Codecademy</p>
-          </div>
-        </div>
-        <div class="col-xxs-12 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 three">
-          <div><img src="images/internshala.png">
-            <p>Internshala</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <hr>
-  <section id="other">
-    <div class="container">
-      <h2> My interests</h2>
-      <p id="first-line">I like to play with my kids, do outdoorsy activities, pen down my mind or watch movies. I am also learning Hindustani music as singing is another passion of mine.</p>
-    </div>
-  </section>
-  <hr id="end">
-  <footer>
-    <div class="text-center">Get in Touch : preiyah@gmail.com</div>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 
