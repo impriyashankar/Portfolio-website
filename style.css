@@ -7,6 +7,10 @@ body {
   background-color: #fff;
 }
 
+.hero {
+  height: 100vh;
+}
+
 h1 {
   font-size: 60px;
 }
@@ -18,6 +22,7 @@ a {
 
 a {
   text-decoration: none ! important;
+
 }
 
 .header {
@@ -27,7 +32,7 @@ a {
 }
 
 .logo {
-  margin-top: -20px;
+  margin-top: -27px;
   margin-left: -20px;
 }
 
@@ -141,7 +146,7 @@ a {
 }
 
 .intro h1:nth-child(3) {
-  color: rgba(20, 28, 58, .6)
+  color: rgba(20, 28, 58, .8)
 }
 
 .intro>p:first-child {
@@ -241,7 +246,312 @@ a {
   border: none;
 }
 
-@media(min-width:992px) {
+.line {
+  width: 100px;
+  height: 2px;
+  border-top: 2px solid #000;
+  transform: rotate(90deg);
+  position: relative;
+  left: -40px;
+  margin-top: 49px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 300px;
+  left: 20px;
+  list-style: none;
+
+}
+
+.social-media i {
+  font-size: 21px;
+  margin-bottom: 29px;
+}
+
+.social-media a {
+  color: rgba(0, 0, 0, .8);
+}
+
+#about-me {
+  text-align: center;
+  color: #fff;
+  background-color: #ff66c4;
+}
+
+#about-me>.container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+#about-me .content {
+  margin: 0 180px;
+}
+
+#about-me p {
+  margin-top: 30px;
+  line-height: 2;
+  margin-bottom: 130px;
+}
+
+.skills {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -120px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.skills .container {
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  ;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.skills .content {
+  /* display:flex;
+  justify-content: space-around; */
+}
+
+.skills .content>div {
+  /* width:33.3%;
+  display:inline-block; */
+  text-align: center;
+  padding-top: 80px;
+}
+
+.skills .content>div:not(.tools) {
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.skills .content i {
+  font-size: 30px;
+}
+
+.skills .col-md-4 {
+  height: 450px;
+}
+
+.skills h3 {
+  margin: 20px 0 30px;
+
+}
+
+.projects a, .icons a {
+  color: rgba(0, 0, 0, .8);
+}
+
+.project-tech {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+
+}
+
+.project-tech p:not(:last-child) {
+  margin-right: 20px;
+}
+
+.project-image {
+  /* width:60%; */
+  position: relative;
+  border-radius: 4px;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.projects .container>div:nth-child(2) {
+  margin-top: 90px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+
+.project-text {
+  width: 40%;
+  text-align: right;
+  flex-grow: 1;
+
+}
+
+.project-desc {
+  /* margin-left:-50px; */
+  /* border:1px solid #000; */
+  position: relative;
+  background-color: #141c3a;
+  color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 25px 0 20px -50px;
+}
+
+.project-desc p {
+  line-height: 1.6;
+}
+
+.project:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(2n + 1) .project-desc {
+  margin-left: 0;
+  margin-right: -50px;
+}
+
+.project:nth-child(2n + 1) .project-text {
+  margin-left: 0;
+  margin-right: -50px;
+  text-align: left;
+}
+
+.project:nth-child(2n + 1) .project-tech {
+  justify-content: flex-start;
+}
+
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 102, 196, .4);
+  top: 0;
+  border-radius: 4px;
+  transition: opacity .3s ease-in-out;
+  /* transition-duration: 2s; */
+}
+
+.project>a {
+  display: block;
+  width: 60%;
+}
+
+.other-projects a.link-div{
+  display:block;
+}
+
+.projects .container, .other-projects .container {
+  padding-top: 120px;
+}
+
+.projects h2, .other-projects h2 {
+  text-align: center;
+}
+
+.project-view a:first-child {
+  margin-right: 15px;
+
+}
+
+.project-view a {
+
+  font-size: 20px;
+}
+
+.project-image:hover .image-overlay {
+  /* display:none; */
+  opacity: 0;
+}
+
+.other-projects .work{
+  /* margin:20px; */
+  padding:20px;
+  /* box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  border-radius:12px; */
+  position:relative;
+  top:0;
+  transition: top ease .5s;
+
+}
+
+.other-projects .content {
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  border-radius:12px;
+  padding: 40px 27px;
+}
+.other-projects .icons{
+  text-align:right;
+}
+
+.other-projects .project-tech p {
+  margin: 0 20px 0 0;
+}
+
+/* .other-projects .project-tech p:first-child {
+  margin: 0 ;
+} */
+.other-projects .project-tech{
+  justify-content: flex-start;
+  margin-top: 33px;
+}
+
+.icons a:first-child {
+  margin-right: 15px;
+
+}
+
+.icons a {
+
+  font-size: 20px;
+}
+
+.other-projects .container .row:nth-child(2){
+  margin-top:70px;
+}
+
+.other-projects .work:hover{
+top:-10px;
+}
+
+.other-projects .work:hover .text h3{
+color:#ff66c4;
+
+}
+.footer{
+margin-top:120px;
+background-color: #ff66c4;
+padding-bottom: 80px;
+}
+.get-in-touch{
+  display:flex;
+  justify-content: center;
+  padding:57px 60px;
+  background-color: #141c3a;
+  color: #fff;
+  border-radius:12px;
+  position:relative;
+  top:-50px;
+}
+.get-in-touch h2{
+  margin:0 50px 0 0;
+}
+.get-in-touch p{
+  margin-top:7px;
+}
+.footer .logo{
+  text-align:center;
+  margin:25px 0 30px;
+
+}
+.footer .final-text p{
+  text-align:center;
+  color:#fff;
+  font-size:21px;
+}
+
+/***********************MEDIA QUERIES*********************/
+
+@media(min-width:426px) {
+  /*For Large screen devices*/
 
   .menu,
   .menu-icon-cross {
@@ -249,14 +559,72 @@ a {
   }
 }
 
-@media(max-width:768px) {
+@media(max-width:425px) {
+  /*For smaller screen devices*/
 
   .menu-lg,
-  .btn-scroll {
+  .btn-scroll,
+  .social-media {
     display: none;
   }
 
   .intro {
     align-items: flex-start;
   }
+
+  .image-overlay {
+    background-color: rgba(20, 28, 58, .8)
+  }
+
+  .project-text {
+
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    /* background-color:#000; */
+    padding: 40px;
+
+    background: url("https://loremflickr.com/720/440") no-repeat fixed;
+
+    background-color: rgba(20, 28, 58, .8);
+    background-blend-mode: soft-light;
+
+  }
+
+  .project-text a {
+    color: #fff;
+    text-align: left;
+  }
+
+  .project-tech {
+    justify-content: flex-start;
+  }
+
+  .project .project-desc {
+    background-color: transparent;
+    padding: 0;
+    margin: 20px 0 !important;
+  }
+
+  .project {
+
+    display: block;
+  }
+
+  .project-tech p {
+    font-size: 14px;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  #about-me .content {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+
 }
