@@ -20,49 +20,52 @@
   <!-- Navigation Block-->
 
   <section class="hero">
-    <div class="container">
-      <nav>
-        <div class="header">
-          <div class="logo">
+    <nav id="navBar">
+      <div class="header">
+        <div class="logo">
+          <a href='/'>
             <img src="images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="menu">
+          <i class="fa fa-solid fa-bars"></i>
+        </div>
+        <div class="menu-expanded">
+          <div class="menu-items">
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <button class="btn-resume">
+              <a href="#">Resume</a>
+            </button>
           </div>
-          <div class="menu">
-            <i class="fa fa-solid fa-bars"></i>
+          <div class="menu-icon-cross">
+            <i class="fa fa-solid fa-xmark"></i>
           </div>
-          <div class="menu-expanded">
-            <div class="menu-items">
-              <a href="#">About</a>
-              <a href="#">Skills</a>
-              <a href="#">Projects</a>
-              <a href="#">Contact</a>
-              <button class="btn-resume">
-                <a href="#">Resume</a>
-              </button>
-            </div>
-            <div class="menu-icon-cross">
-              <i class="fa fa-solid fa-xmark"></i>
-            </div>
-
-          </div>
-          <div class="menu-lg">
-            <div class="menu-items-lg">
-              <a href="#">About</a>
-              <a href="#">Skills</a>
-              <a href="#">Projects</a>
-              <a href="#">Contact</a>
-              <button class="btn-resume">
-                <a href="#">Resume</a>
-              </button>
-            </div>
-            <div class="menu-icon-cross">
-              <i class="fa fa-solid fa-xmark"></i>
-            </div>
-
-          </div>
-
 
         </div>
-      </nav>
+        <div class="menu-lg">
+          <div class="menu-items-lg">
+            <a href="#about-me">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#get-in-touch">Contact</a>
+            <button class="btn-resume">
+              <a href="#">Resume</a>
+            </button>
+          </div>
+          <div class="menu-icon-cross">
+            <i class="fa fa-solid fa-xmark"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+    </nav>
+    <div class="container">
+
       <!-- Hero Block-->
       <div class="intro">
         <p>Hi, my name is</p>
@@ -75,11 +78,11 @@
 
       </a>
       <ul class="social-media">
-        <li><a href="#" target="_blank"><i class="fa fa-brands fa-github"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-brands fa-codepen"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-brands fa-medium"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://github.com/impriyashankar" target="_blank"><i class="fa fa-brands fa-github"></i></a></li>
+        <li><a href="https://codepen.io/impriyashankar/" target="_blank"><i class="fa fa-brands fa-codepen"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/priyashankarkp/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://medium.com/@preiyah" target="_blank"><i class="fa fa-brands fa-medium"></i></a></li>
+        <li><a href="https://twitter.com/impriyashankar" target="_blank"><i class="fa fa-brands fa-twitter"></i></a></li>
         <li class="line"></li>
       </ul>
     </div>
@@ -101,7 +104,7 @@
       </div>
   </section>
 
-  <section class="skills">
+  <section id="skills">
     <div class="container">
       <div class="content row">
         <div class="languages col-md-4">
@@ -142,21 +145,21 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section id="projects">
     <div class="container">
       <h2>My Projects</h2>
       <div class="project">
         <a href="#">
           <div class="project-image">
-            <img src="images/restaurant-proj.png" alt="">
+            <img src="images/React-signup-form.png" alt="">
             <div class="image-overlay"></div>
 
           </div>
         </a>
-        <div class="project-text">
+        <div class="project-text first">
           <div class="project-name">
             <a href="#">
-              <h3>Restaurant</h3>
+              <h3>Sign-up Form - React</h3>
             </a>
           </div>
           <div class="project-desc first">
@@ -169,8 +172,8 @@
             <p>Bootstrap</p>
           </div>
           <div class="project-view">
-            <a href="#" target="_blank"><i class="fa fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            <a href="https://github.com/impriyashankar/React-Signup-Form" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+            <!-- <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a> -->
           </div>
         </div>
 
@@ -178,14 +181,14 @@
       <div class="project">
         <a href="#">
           <div class="project-image">
-            <img src="images/restaurant-proj.png" alt="">
+            <img src="images/React-estore.png" alt="">
             <div class="image-overlay"></div>
           </div>
         </a>
-        <div class="project-text">
+        <div class="project-text second">
           <div class="project-name">
             <a href="#">
-              <h3>Restaurant</h3>
+              <h3>Simple Estore - React</h3>
             </a>
           </div>
           <div class="project-desc second">
@@ -198,23 +201,23 @@
             <p>Bootstrap</p>
           </div>
           <div class="project-view">
-            <a href="#" target="_blank"><i class="fa fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            <a href="https://github.com/impriyashankar/My-First-React-App" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+            <!-- <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a> -->
           </div>
         </div>
       </div>
       <div class="project">
         <a href="#">
           <div class="project-image">
-            <img src="images/restaurant-proj.png" alt="">
+            <img src="images/Ecolympians.png" alt="">
             <div class="image-overlay"></div>
 
           </div>
         </a>
-        <div class="project-text">
+        <div class="project-text third">
           <div class="project-name">
-            <a href="#">
-              <h3>Restaurant</h3>
+            <a href="http://www.ecolympians.fun/">
+              <h3>Ecolympians</h3>
             </a>
           </div>
           <div class="project-desc third">
@@ -227,8 +230,38 @@
             <p>Bootstrap</p>
           </div>
           <div class="project-view">
-            <a href="#" target="_blank"><i class="fa fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            <a href="https://github.com/impriyashankar/ecolympians" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+            <a href="http://www.ecolympians.fun/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="#">
+          <div class="project-image">
+            <img src="images/Real-time-clock.png" alt="">
+            <div class="image-overlay"></div>
+
+          </div>
+        </a>
+        <div class="project-text fourth">
+          <div class="project-name">
+            <a href="https://impriyashankar.github.io/Real-time-Clock/">
+              <h3>Real-time Clock</h3>
+            </a>
+          </div>
+          <div class="project-desc third">
+            <p>This was one of my first web development projects that was also a part of an assignment on 'Coursera'. A
+              replica of the website was produced from scratch based on a visual design provided.</p>
+          </div>
+          <div class="project-tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Bootstrap</p>
+          </div>
+          <div class="project-view">
+            <a href="https://github.com/impriyashankar/Real-time-Clock" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+            <a href="https://impriyashankar.github.io/Real-time-Clock/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
           </div>
         </div>
       </div>
@@ -253,7 +286,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>Gameboard</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -272,7 +305,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>Font Preview</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -289,7 +322,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>Feedster</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -310,7 +343,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>The Quad</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -327,7 +360,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>GrandeBay Resort</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -344,7 +377,7 @@
               <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
             </div>
             <div class="text">
-              <h3>IBS career page</h3>
+              <h3>David Chu's restaurant</h3>
               <p>Description text for the project that needs to grab the attention of the reader.</p>
             </div>
             <div class="project-tech">
@@ -364,7 +397,7 @@
 
   <section class="footer">
     <div class="container">
-      <div class="get-in-touch">
+      <div id="get-in-touch">
         <h2>Get in Touch</h2>
         <p>preiyah@gmail.com</p>
       </div>
