@@ -164,8 +164,10 @@ a {
 
 }
 
-.intro h1:nth-child(3) {
-  color: rgba(20, 28, 58, .8)
+
+.intro h2 {
+  color: rgba(20, 28, 58, .8);
+  font-size:50px;
 }
 
 .intro>p:first-child {
@@ -285,6 +287,20 @@ a {
 
 }
 
+.social-media li{
+  position:relative;
+  top:0;
+  transition: top ease .5s;
+}
+
+.social-media li:hover{
+  top:-5px;
+}
+
+.social-media li:hover a{
+  color:#ff66c4;
+}
+
 .social-media i {
   font-size: 21px;
   margin-bottom: 29px;
@@ -292,6 +308,7 @@ a {
 
 .social-media a {
   color: rgba(0, 0, 0, .8);
+  transition: color ease .5s;
 }
 
 #about-me {
@@ -368,7 +385,13 @@ a {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 5px;
+  font-family: 'Source Code Pro', monospace;
 
+
+}
+
+.project-tech p{
+  font-size:14px;
 }
 
 .project-tech p:not(:last-child) {
@@ -404,11 +427,20 @@ a {
   position: relative;
 }
 
+.project .project-text h3{
+  transition: color ease .5s;
+}
+
+.project .project-text h3:hover{
+  color:#ff66c4;
+}
+
 
 .project-text {
   width: 40%;
   text-align: right;
   flex-grow: 1;
+  transition: color ease 1s;
 
 }
 
@@ -510,6 +542,15 @@ a {
 
 .other-projects .icons {
   text-align: right;
+
+}
+.other-projects .icons a{
+  color:inherit;
+  transition: color ease .5s;
+}
+
+.project-view i:hover, .other-projects .icons a:hover{
+  color:#ff66c4;
 }
 
 .other-projects .project-tech p {
@@ -528,6 +569,9 @@ a {
   margin-right: 15px;
 
 }
+.work .content .text {
+  height:105px;
+}
 
 .icons a {
 
@@ -542,7 +586,7 @@ a {
   top: -10px;
 }
 
-.other-projects .work:hover .text h3 {
+.other-projects .work .text:hover h3 {
   color: #ff66c4;
 
 }
@@ -581,7 +625,9 @@ a {
 .footer .final-text p {
   text-align: center;
   color: #fff;
-  font-size: 21px;
+  font-size: 20px;
+  width:300px;
+  margin: 0 auto;
 }
 
 /***********************MEDIA QUERIES*********************/
