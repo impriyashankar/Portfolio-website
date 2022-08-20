@@ -167,7 +167,7 @@ a {
 
 .intro h2 {
   color: rgba(20, 28, 58, .8);
-  font-size:50px;
+  font-size: 50px;
 }
 
 .intro>p:first-child {
@@ -287,18 +287,18 @@ a {
 
 }
 
-.social-media li{
-  position:relative;
-  top:0;
+.social-media li {
+  position: relative;
+  top: 0;
   transition: top ease .5s;
 }
 
-.social-media li:hover{
-  top:-5px;
+.social-media li:hover {
+  top: -5px;
 }
 
-.social-media li:hover a{
-  color:#ff66c4;
+.social-media li:hover a {
+  color: #ff66c4;
 }
 
 .social-media i {
@@ -324,12 +324,13 @@ a {
 
 #about-me .content {
   margin: 0 180px;
+  padding: 30px 0 130px;
 }
 
 #about-me p {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   line-height: 2;
-  margin-bottom: 130px;
+  /* margin-bottom: 130px; */
 }
 
 #skills {
@@ -390,8 +391,8 @@ a {
 
 }
 
-.project-tech p{
-  font-size:14px;
+.project-tech p {
+  font-size: 14px;
 }
 
 .project-tech p:not(:last-child) {
@@ -403,12 +404,12 @@ a {
   position: relative;
   border-radius: 4px;
   width: 700px;
-    height: 450px;
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  height: 450px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .project-image img {
@@ -427,12 +428,12 @@ a {
   position: relative;
 }
 
-.project .project-text h3{
+.project .project-text h3 {
   transition: color ease .5s;
 }
 
-.project .project-text h3:hover{
-  color:#ff66c4;
+.project .project-text h3:hover {
+  color: #ff66c4;
 }
 
 
@@ -544,13 +545,15 @@ a {
   text-align: right;
 
 }
-.other-projects .icons a{
-  color:inherit;
+
+.other-projects .icons a {
+  color: inherit;
   transition: color ease .5s;
 }
 
-.project-view i:hover, .other-projects .icons a:hover{
-  color:#ff66c4;
+.project-view i:hover,
+.other-projects .icons a:hover {
+  color: #ff66c4;
 }
 
 .other-projects .project-tech p {
@@ -569,8 +572,9 @@ a {
   margin-right: 15px;
 
 }
+
 .work .content .text {
-  height:105px;
+  height: 105px;
 }
 
 .icons a {
@@ -626,7 +630,7 @@ a {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  width:300px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -657,7 +661,8 @@ a {
   .image-overlay {
     background-color: rgba(20, 28, 58, .8)
   }
-  #navBar{
+
+  #navBar {
     padding: 0 15px;
   }
 
@@ -675,7 +680,7 @@ a {
 
   }
 
-  .project-text.first{
+  .project-text.first {
     background: url('images/React-signup-form.png') no-repeat fixed;
 
     background-color: rgba(20, 28, 58, .8);
@@ -683,7 +688,7 @@ a {
 
   }
 
-  .project-text.second{
+  .project-text.second {
     background: url('images/React-estore.png') no-repeat fixed;
 
     background-color: rgba(20, 28, 58, .8);
@@ -691,7 +696,7 @@ a {
 
   }
 
-  .project-text.third{
+  .project-text.third {
     background: url('images/ecolympians.png') no-repeat fixed;
 
     background-color: rgba(20, 28, 58, .8);
@@ -699,7 +704,7 @@ a {
 
   }
 
-  .project-text.fourth{
+  .project-text.fourth {
     background: url('images/Real-time-clock.png') no-repeat fixed;
 
     background-color: rgba(20, 28, 58, .8);
