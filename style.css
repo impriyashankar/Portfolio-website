@@ -681,7 +681,7 @@ a {
   }
 
   .project-text.first {
-    background: url('images/React-signup-form.png') no-repeat fixed;
+    background: url('images/React-signup-form.png') no-repeat;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
