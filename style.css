@@ -680,6 +680,10 @@ a {
 
   }
 
+  .project .project-text h3{
+    color: #fff;
+  }
+
   .project-text.first {
     background: url('images/React-signup-form.png') no-repeat;
 
@@ -689,7 +693,7 @@ a {
   }
 
   .project-text.second {
-    background: url('images/React-estore.png') no-repeat fixed;
+    background: url('images/React-estore.png') no-repeat ;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
@@ -697,7 +701,7 @@ a {
   }
 
   .project-text.third {
-    background: url('images/ecolympians.png') no-repeat fixed;
+    background: url('images/ecolympians.png') no-repeat ;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
@@ -705,7 +709,7 @@ a {
   }
 
   .project-text.fourth {
-    background: url('images/Real-time-clock.png') no-repeat fixed;
+    background: url('images/Real-time-clock.png') no-repeat ;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
@@ -715,6 +719,10 @@ a {
   .project-text a {
     color: #fff;
     text-align: left;
+  }
+
+  .project-view a{
+    color:#fff;
   }
 
   .project-tech {
