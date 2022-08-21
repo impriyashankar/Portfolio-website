@@ -721,7 +721,7 @@ a {
     text-align: left;
   }
 
-  .project-view a{
+  #projects .project-view a{
     color:#fff;
   }
 
