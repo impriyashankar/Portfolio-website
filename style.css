@@ -711,7 +711,7 @@ a {
   }
 
   .project-text.first {
-    background: url('images/React-signup-form.png') no-repeat;
+    background: url('images/url-shortening-api.png') no-repeat;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
@@ -727,7 +727,7 @@ a {
   }
 
   .project-text.third {
-    background: url('images/Ecolympians.png') no-repeat;
+    background: url('images/interactive-cards.png') no-repeat;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
@@ -735,7 +735,7 @@ a {
   }
 
   .project-text.fourth {
-    background: url('images/interactive-cards.png') no-repeat;
+    background: url('images/Ecolympians.png') no-repeat;
 
     background-color: rgba(20, 28, 58, .8);
     background-blend-mode: soft-light;
